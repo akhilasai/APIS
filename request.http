@@ -1,0 +1,35 @@
+POST http://localhost:9000/create_table/customers
+###
+
+POST http://localhost:9000/create_user/users
+Content-type: application/json
+
+{
+    "id":1,
+    "name":"akhilasai",
+    "age":22
+}
+
+###
+POST http://localhost:9000/create_many_user/users
+content-type: application/json
+
+[
+{ "id":2, "name":"srk","age":21},
+{ "id":3, "name":"spandana","age":22}, 
+{ "id":4, "name":"praneeth","age":21}
+]
+
+###
+PUT http://localhost:9000/update_user/users/2
+content-type:application/json
+
+{
+    "name":"siva1122"
+}
+
+###
+DELETE http://localhost:9000/delete_user/users/3
+
+###
+DELETE http://localhost:9000/delete_users/us
